@@ -1,0 +1,131 @@
+.task-input-container input {
+  padding: 10px;
+  width: 90%;
+  border: 3px solid #2f00ff;
+  color: #2f00ff;
+  border-radius: 15px;
+  animation: fadeIn2 2s ease;
+}
+
+.task-input-container input::placeholder {
+  color: #2f00ff;
+}
+
+.nohaylista {
+  color: #2f00ff;
+  animation: fadeIn2 2s ease;
+}
+
+.task-input-container button {
+  padding: 10px;
+  margin-left: 10px;
+  color: #2f00ff;
+  border: 3px solid #2f00ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: padding 0.7s ease, color 0.7s ease;
+}
+
+.task-input-container button:hover {
+  padding: 8px;
+  border: 4px solid;
+  color: white;
+  animation: cambioDeColor 2s infinite alternate, cambioDeFondo 1s infinite alternate;
+}
+
+/* Estilos para la lista de tareas */
+.task-list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 4px solid;
+  border-radius: 4px;
+  animation: cambioDeColor 2s infinite alternate, cambioDeColor2 2s infinite alternate;
+}
+
+.task-list li button {
+  color: red;
+  border: 3px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.task-list li button:hover {
+  padding: 7px;
+  border: 4px solid;
+  background-color: red;
+  color: white;
+  animation: cambioDeColor 2s infinite alternate;
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn2 {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+  0% {
+      border-color: #2f00ff; 
+  }
+  50% {
+    border-color: rgb(132, 0, 255);
+  }
+  100% {
+      border-color: #e74c3c; 
+  }
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+h1 {
+    font-size: 45px;
+}
+}
+
+/*Media screen tamaño móvil*/
+@media only screen and (max-width: 400px) {
+h1 {
+    font-size: 30px;
+}
+
+.nohaylista {
+  font-size: 15px;
+}
+
+.task-input-container input {
+  width: 70%;
+}
+
+.task-input-container button {
+    font-size: 12px;
+}
+
+.task-list {
+  margin: 10px;
+  width: 70%;
+}
+
+.task-list li button {
+  font-size: 12px;
+  font-weight: bold;
+}
+}
+
+  

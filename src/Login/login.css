@@ -1,0 +1,109 @@
+.loginForm {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+label {
+    color: #2f00ff;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    animation: fadeIn 2s ease;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border: 4px solid #2f00ff;
+    color: #2f00ff;
+    border-radius: 20px;
+    width: 600px;
+    font-size: 30px;
+    background-color: transparent;
+    animation: fadeIn 2s ease;
+  }
+
+.loginButton {
+    font-size: 20px;
+    margin: 25px;
+    border-radius: 25px;
+}
+
+.login::placeholder {
+    font-size: 25px;
+  }
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    label {
+        font-size: 20px;
+    }
+
+    .login {
+        width: 330px;
+        font-size: 25px;
+    }
+
+    .loginButton {
+        font-size: 17px;
+    }
+  }
+
+  /*Media screen tamaño móvil*/
+@media only screen and (max-width: 400px) {
+    label {
+        font-size: 15px;
+    }
+
+    .login {
+        width: 280px;
+        font-size: 22px;
+    }
+
+    .loginButton {
+        font-size: 13px;
+    }
+  }

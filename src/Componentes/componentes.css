@@ -1,0 +1,86 @@
+button {
+    margin: 10px;
+    transition: padding 0.7s ease, color 0.7s ease;
+    background-color: transparent;
+    animation: fadeIn 2s ease;
+}
+
+button:hover {
+    padding: 6px;
+    border: 4px solid #2f00ff;
+    color: white;
+    animation: cambioDeColor 2s infinite alternate, cambioDeFondo 1s infinite alternate ;
+}
+
+.Tamano-Botones {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row; 
+    gap: 100px;           
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 60px;
+    }
+    .Tamano-Botones {
+        flex-direction: column; /* Cambia a una sola columna */
+        gap: 20px;
+        margin: 10px;
+        font-size: 25px;
+    }
+}
+
+/*Media screen tamaño móvil*/
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 45px;
+    }
+    .Tamano-Botones {
+        flex-direction: column; /* Cambia a una sola columna */
+        gap: 20px;
+        margin: 10px;
+        font-size: 15px;
+    }
+}

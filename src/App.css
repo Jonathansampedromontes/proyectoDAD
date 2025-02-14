@@ -1,0 +1,173 @@
+/* Para los navegadores */
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #333; 
+  padding: 10px 40px; 
+  transition: background-color 0.5s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; 
+}
+
+nav ul li a {
+  color: #2f00ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: padding 0.7s ease, color 0.7s ease;
+}
+
+nav ul li a:hover {
+  border: 4px solid #2f00ff;
+  color: white;
+  border-radius: 28px;
+  padding: 5px;
+  animation: cambioDeColor 2s infinite alternate, cambioDeFondo 1s infinite alternate ;
+}
+
+body {
+  margin: 0; 
+  padding-top: 60px; 
+  transition: background-color 0.5s ease;
+}
+
+body.darkmode {
+  background-color: #000000;
+}
+
+body.darkmode nav {
+  background-color: white;
+}
+
+body.darkmode p {
+  color: #2f00ff;
+}
+
+body.darkmode i {
+  color: black;
+}
+/* Para el título de la navegación */
+p {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+
+p.darkmode {
+  color: black;
+}
+
+/* Para los iconos */
+.nav-icons {
+  margin-left: auto; 
+  display: flex;
+  align-items: center; 
+}
+
+.nav-icons i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: color 0.3s, padding 0.7s ease;
+}
+
+.nav-icons i:hover {
+  color: #2f00ff; 
+  padding: 5px;
+  animation: cambioDeColor2 2s infinite alternate;
+}
+
+.mode-button {
+  border: none;
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+  0% {
+      border-color: #2f00ff; 
+  }
+  50% {
+    border-color: rgb(132, 0, 255);
+  }
+  100% {
+      border-color: #e74c3c; 
+  }
+}
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+  0% {
+      color: #2f00ff; 
+  }
+  50% {
+    color: rgb(132, 0, 255);
+  }
+  100% {
+      color: #e74c3c; 
+  }
+}
+
+/* Para animar el color de fondo del boton */
+@keyframes cambioDeFondo {
+  0% {
+      background-color: #000000; 
+  }
+  100% {
+    background-color: rgb(49, 49, 49);
+  }
+
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    .darkmod {
+      font-size: 15px;
+    }
+
+    nav ul {
+      gap: 10px;
+    }
+
+    nav ul li a {
+      font-size: 15px;
+    }
+
+    .nav-icons i {
+        font-size: 15px;
+    }
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 600px) {
+  .darkmod {
+    font-size: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    flex-direction: row;
+  }
+
+  .nav-icons i {
+      font-size: 15px;
+  }
+}
+
+

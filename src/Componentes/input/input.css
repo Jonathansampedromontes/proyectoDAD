@@ -1,0 +1,102 @@
+/*Título del input*/
+h2 {
+    font-size: 30px;
+    animation: fadeIn 2s ease, cambioDeColor2 2s infinite alternate;
+}
+
+/*Mensaje de bienvenida*/
+.bienvenida {
+    color: #2f00ff;
+}
+
+/*Para el cuadro del input*/
+input {
+    border: 3px solid #2f00ff;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    color: #2f00ff;
+  }
+
+.Button {
+    border: 3px solid #2f00ff;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 20px;
+}
+
+p {
+    color: blue; 
+    font-weight: bold; 
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    input {
+        width: 200px;
+    }
+
+    .Button {
+        font-size: 14px;
+    }
+  }
+
+/*Media screen tamaño móvil*/
+@media only screen and (max-width: 400px) {
+    h2 {
+       font-size: 18px; 
+    }
+    input {
+        width: 130px;
+    }
+
+    .Button {
+        font-size: 10px;
+    }
+
+    .bienvenida {
+        font-size: 15px;
+    }
+
+  }
+

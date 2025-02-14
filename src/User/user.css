@@ -1,0 +1,88 @@
+.titulouser {
+    margin:30px;
+    animation: fadeIn 2s ease;
+}
+
+.cuadro {
+    border: 5px solid;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    animation: fadeIn 2s ease, cambioDeColor 2s infinite alternate;
+}
+
+.usertext {
+    color: #2f00ff;
+    font-weight: bold;
+    font-size: 25px;
+    animation: fadeIn 2s ease, cambioDeColor2 2s infinite alternate;
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    .titulouser {
+        font-size: 40px;
+    }
+
+    .titleuser {
+        font-size: 30px;
+    }
+
+    .usertext {
+        font-size: 20px;
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 400px) {
+    .titulouser {
+        font-size: 30px;
+    }
+
+    .titleuser {
+        font-size: 20px;
+    }
+
+    .usertext {
+        font-size: 13px;
+    }
+
+  }
