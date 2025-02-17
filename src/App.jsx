@@ -7,7 +7,7 @@ import UserU from './User/UsersU';
 import Componentes from './Componentes/Componentesj';
 import Informes from './Informes/Informes';
 import Gestor from './Gestor/GestorT';
-import DarkMode from './Darkmode';
+import DarkMode from './DarkModej';
 import AlgoliaU from './Algolia/AlgoliaU';
 import ChatbotComponent from './Chatbot/Chatbot';
 import 'core-js/stable';
