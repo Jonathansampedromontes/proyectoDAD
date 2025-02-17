@@ -14,7 +14,7 @@ const Informes = ({ darkMode }) => {
 
   useEffect(() => {
     // Cargar el archivo CSV desde public/
-    Papa.parse("/src/Informes/campeones.csv", {
+    Papa.parse("/campeones.csv", {
       download: true,
       header: true,
       dynamicTyping: true,
