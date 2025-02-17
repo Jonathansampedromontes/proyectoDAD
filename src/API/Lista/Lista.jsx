@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './lista.css'
+import './Lista.css'
 
 const Lista = ({ imagesData }) => {
   const itemsPerPage = 2; // Número de cuadros que se permite por página
