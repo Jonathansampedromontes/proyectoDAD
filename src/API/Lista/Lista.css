@@ -1,0 +1,192 @@
+/*Contenedor para separar entre el fetch y la lista*/
+.contenedorLista {
+  margin: 30px;
+}
+
+/*Contenedor para separar los grupos de lado a lado*/
+.image-list {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-direction: row; 
+  gap: 100px; 
+}
+
+.image-item {
+  border-radius: 20px;
+  border: 4px solid;  
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 7px;
+  animation: fadeIn 2s ease, cambioDeColor 2s infinite alternate;
+}
+
+/*Contenedor para separar las imágenes de lado a lado*/
+.imageScreen {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-direction: row; 
+  gap: 40px; 
+}
+
+/*Imagen*/
+.Image {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: padding 0.5s ease, width 1s ease, transform 1s ease;
+}
+
+.Image:hover {
+  padding: 7px;
+}
+
+.Image:active {
+  width: 150px;
+  transform: rotate(360deg);
+}
+
+/*Emoji*/
+.emojimage {
+  width: 80px; 
+  height: auto;
+  cursor: pointer;
+  transition: padding 0.5s ease, width 1s ease, transform 1s ease;
+}
+
+.emojimage:hover {
+  padding: 7px;
+}
+
+.emojimage:active {
+  width: 60px;
+  transform: rotate(360deg);
+}
+
+/*Título de los mensajes*/
+.titulos {
+  color: #2f00ff;
+  margin: 5px;
+  animation: fadeIn 2s ease;
+}
+
+/*Título del grupo*/
+.titulos2 {
+  animation: cambioDeColor2 2s infinite alternate;
+  margin-right: 200px;
+}
+
+/*Botones para cambiar de página entre otros grupos*/
+.navegaciones {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-direction: row; 
+  margin: 20px;
+}
+
+.numero-pagina {
+  color: #2f00ff;
+  font-size: 22px;
+  font-weight: bold;
+  animation: fadeIn 2s ease;
+}
+
+/*Barra de búsqueda*/
+.input-busqueda {
+  color: #2f00ff;
+  animation: fadeIn 2s ease;
+}
+
+.barra-busqueda {
+  margin: 20px;
+}
+
+.barra-busqueda::placeholder {
+  color: #2f00ff;
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+0% {
+    border-color: #2f00ff; 
+}
+50% {
+  border-color: rgb(132, 0, 255);
+}
+100% {
+    border-color: #e74c3c; 
+}
+}
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+0% {
+    color: #2f00ff; 
+}
+50% {
+  color: rgb(132, 0, 255);
+}
+100% {
+    color: #e74c3c; 
+}
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+  .image-list {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 400px) {
+  .image-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Image {
+    width: 140px;
+  }
+
+  .Image:active {
+    width: 100px;
+    transform: rotate(360deg);
+  }
+
+  .emojimage {
+      width: 60px;
+  }
+
+  .emojimage:active {
+    width: 50px;
+    transform: rotate(360deg);
+  }
+
+  .titulos2 {
+    font-size: 15px;
+  }
+
+  .numero-pagina {
+    font-size: 20px;
+  }
+
+  .buttonpage {
+    font-size: 14px;
+  }
+}

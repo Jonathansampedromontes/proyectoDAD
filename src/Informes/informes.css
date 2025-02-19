@@ -1,0 +1,70 @@
+.Graphics {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-filtro {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+    transition: color 1s ease;
+}
+
+.text-filtro.darkmode {
+    color: #ddd;
+}
+
+.select {
+    animation: fadeIn 2s ease;
+}
+
+  /* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+  
+  /* Para animar el color de los iconos */
+  @keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+  
+  /* Para animar el color de fondo del boton */
+  @keyframes cambioDeFondo {
+    0% {
+        background-color: #000000; 
+    }
+    100% {
+      background-color: rgb(49, 49, 49);
+    }
+  
+  }
+
+  /*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,64 @@
+.micro-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-micro {
+    color:blue;
+    font-weight: bold;
+}
+
+.input-color {
+    color:blue;
+    width: 300px;
+    font-size: 25px;
+}
+
+.micro {
+    font-size: 20px;
+}
+
+.envio {
+    font-size: 20px;
+}
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    .input-color {
+        width: 230px;
+        font-size: 20px;
+    }
+
+    .micro {
+        font-size: 16px;
+    }
+
+    .envio {
+        font-size: 16px;
+    }
+}
+
+/*Media screen tamaño móvil*/
+@media only screen and (max-width: 400px) {
+    .input-color {
+        width: 180px;
+        font-size: 16px;
+    }
+
+    .micro {
+        font-size: 12px;
+    }
+
+    .envio {
+        font-size: 12px;
+    }
+
+    .title-micro {
+        font-size: 15px;
+        
+    }
+}
+
+
+
+

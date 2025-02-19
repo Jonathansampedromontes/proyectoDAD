@@ -1,0 +1,75 @@
+/*Para el texto*/
+p.texto {
+    color:blue;
+    font-size: 15px;
+    margin: 10px;
+    animation: fadeIn 2s ease;
+}
+
+/*Para la imagen aleatoria del gato*/
+img.Cat {
+    width: 200px;
+    height: auto;
+    animation: fadeIn 2s ease;
+}
+
+/*Para cuando entre a la página aparezca de forma animada el contenido completo*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Para animar el color del borde */
+@keyframes cambioDeColor {
+    0% {
+        border-color: #2f00ff; 
+    }
+    50% {
+      border-color: rgb(132, 0, 255);
+    }
+    100% {
+        border-color: #e74c3c; 
+    }
+  }
+
+/* Para animar el color de los iconos */
+@keyframes cambioDeColor2 {
+    0% {
+        color: #2f00ff; 
+    }
+    50% {
+      color: rgb(132, 0, 255);
+    }
+    100% {
+        color: #e74c3c; 
+    }
+  }
+
+/*Media screen tamaño medio*/
+@media only screen and (max-width: 800px) {
+    p.texto {
+        font-size: 12px;
+    }
+
+    img.Cat {
+        width: 140px;
+    }
+  }
+
+/*Media screen tamaño móvil*/
+@media only screen and (max-width: 800px) {
+    p.texto {
+        font-size: 10px;
+        max-width: 220px;
+    }
+
+    img.Cat {
+        width: 140px;
+    }
+  }
