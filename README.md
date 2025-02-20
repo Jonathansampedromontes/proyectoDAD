@@ -1,23 +1,22 @@
 <<<<<<< HEAD
-# Viro Starter Kit
+# Viro Starter Kit Jonathan
 
-This is a new [**React Native**](https://reactnative.dev) project, set up with `@reactvision/react-viro`.
+Este es un nuevo proyecto de React Native, configurado con `@reactvision/react-viro`.
 
-## How to Install Viro in an existing project?
+## ¿Cómo instalar Viro en un proyecto existente?
 
 If you are integrating ViroReact into an existing project, have a look at our [Installation instructions](https://viro-community.readme.io/docs/installation-instructions).
 
-## Getting Started
+## Empezar el proceso
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions. Stop before you get to the `Creating a new application` section; we have done that for you!
-
-## Step 1: Install Dependencies
+> **Nota**: Procurar realizar los pasos al pie de la letra 
+## Paso 1: Instalar las dependencias
 
 ```bash
 npm install
 ```
 
-### iOS only:
+### Únicamente IOS:
 
 ```bash
 cd ios
@@ -25,21 +24,21 @@ pod install
 cd ..
 ```
 
-## Step 2: Start the Metro Server
+## Paso 2: Iniciar el Servidor Metro
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Primero, necesitas iniciar Metro, el bundler de JavaScript que viene con React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Para iniciar Metro, ejecuta el siguiente comando desde la raíz de tu proyecto de React Native:
 
 ```bash
 npm start
 ```
 
-## Step 3: Start your Application
+## Paso 3: Iniciar la aplicación
 
-> **Warning**: Due to limitations of the Apple Simulator and the Android Emulator, you must run your project on a physical device.
+> **Aviso**: Debido a limitaciones del Simulador de Apple y el Emulador de Android, debes ejecutar tu proyecto en un dispositivo físico.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Deja que Metro Bundler se ejecute en su propia terminal. Abre una nueva terminal desde la raíz de tu proyecto de React Native. Ejecuta el siguiente comando para iniciar tu aplicación en Android o iOS:
 
 ```bash
 # iOS
@@ -48,7 +47,7 @@ npx react-native run-ios
 npx react-native run-android
 ```
 
-If everything is set up _correctly_, you should see your new app running on you device.
+Si todo está configurado correctamente, deberías ver tu nueva aplicación ejecutándose en tu dispositivo.
 
 #### Install CocoaPods
 
@@ -66,31 +65,22 @@ npm run ios
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Si todo está configurado correctamente, deberías ver tu nueva aplicación ejecutándose en tu Emulador de Android o Simulador de iOS, siempre que hayas configurado tu emulador/simulador correctamente.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Esta es una forma de ejecutar tu aplicación; también puedes ejecutarla directamente desde Android Studio y Xcode.
 
-## Step 4: Modifying your App
+## Paso 4: Modificar tu Aplicación
 
 Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+1. Abre `App.tsx` en tu editor de texto favorito y edita algunas líneas.
+2. Para Android: Presiona la tecla <kbd>R</kbd> dos veces o selecciona "Reload" en el Menú de Desarrollador (<kbd>Ctrl</kbd> + <kbd>M</kbd> en Windows y Linux o <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> en macOS) para ver tus cambios.
 
-## Next Steps
+## Siguiente paso
 
 Check out our [documentation](https://viro-community.readme.io/) for guides, examples, and more!
 
-## Need help?
+## ¿Necesitas ayuda?
 
 [Reach us in Discord.](https://discord.gg/YfxDBGTxvG) or submit an issue!
 =======
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> f6553c0282ddb4400abd2fe802948cd3a7a24851
